@@ -1,0 +1,18 @@
+#anoush-cage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 97vh;
+
+}
+
+#anoush-face {
+    height: 1px;
+    width: 1px;
+    animation: zoom 10000s linear
+}
+
+@keyframes zoom {
+    0% {transform: scale(1)}
+    100% {transform: scale(100000)}
+}
