@@ -1,28 +1,50 @@
-.App {
-  text-align: center;
+.introPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(190, 190, 190);
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
+.introContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 150px;
-  padding: 20px;
-  color: white;
+  width: 100vw;
+  overflow: hidden;  
 }
 
-.App-title {
-  font-size: 1.5em;
+.introLogoLeft, .introLogoRight, .introLogoTitle {
+  width: 100vw;
+  position: absolute;
+  left: 0%;
+  transition: left 1s;
+  clip: rect(0vh,58vw,100vh,42vw);
 }
 
-.App-intro {
-  font-size: large;
+.introLogoTitle {
+  clip: rect(00vh,54vw,100vh,45vw);
+  transition: clip 1s;  
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.introContainer:hover > .introLogoTitle {
+  clip: rect(0vh,96vw,100vh,5vw);
+  transition: clip 1s;  
+}
+
+.introContainer:hover > .introLogoLeft {
+  left: -40%;
+  transition: left 1s;
+}
+
+.introContainer:hover > .introLogoRight {
+  left: +40%;
+  transition: left 1s;
+}
+
+@keyframes spin {
+  0% {transform: translate(0%)}
+  100% {transform: translate(-50%)}
 }
