@@ -1,0 +1,14 @@
+.navButton {
+    background: rgb(79, 181, 255);
+    border: black solid 3px;
+    padding: 3px;
+    padding-left: 6px;
+    padding-right: 6px;    
+    margin: 2px;
+    color: black;
+}
+
+.navButton:hover {
+    color: white;
+    background: rgb(188, 89, 0);
+}
