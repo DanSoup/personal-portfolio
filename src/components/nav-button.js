@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import '../css/nav-button.css';
 
-function NavButton (props) {
-
-    const {changePage, history, name, slug} = props
+function NavButton ({changePage, name}) {
 
     const handleClick = () => {
         changePage(name)

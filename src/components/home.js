@@ -38,16 +38,17 @@ class Home extends React.Component {
                 </div>
                 <div className="primNavigation">
                     {this.state.mainPage.map(pageInfo => {
-                        return <NavButton changePage={this.changePage} history={this.props.history} name={pageInfo.label} slug={pageInfo.slug}/>
+                        return <NavButton changePage={this.changePage} name={pageInfo.label}/>
                     })}
                 </div>
                 <div className="secNavigation">
                     {this.state.mainPage[this.state.selectedPage].subPages.map(pageInfo => {
-                        return <NavButton changePage={this.changePage} history={this.props.history} name={pageInfo.label} slug={pageInfo.slug}/>
+                        return <NavButton changePage={this.changePage} name={pageInfo.label}/>
                     })}
                 </div>
             </header>
-            <Route path="/home/bio" component={Bio}/>
+            <h1>COMING SOON</h1>
+            {/* <Route path="/home/bio" component={Bio}/> */}
         </div>
     }
 
